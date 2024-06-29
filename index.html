@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Food's</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div>
+                    <a href="#" class="text-xl font-bold text-gray-800">Macro Food's</a>
+                </div>
+                <div class="drawer">
+                    <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                        <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 20 20">
+                            <title>Menu</title>
+                            <path                                d="M0 3.333a.833.833 0 111.666 0v1.667a.833.833 0 11-1.666 0v-1.667zm5 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0v-1.667zm5 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0v-1.667zm5 0a.833.833 0 111.666 0v1.667a.833.833 0 11-1.666 0v-1.667zM0 8.333a.833.833 0 111.666 0v1.667a.833.833 0 11-1.666 0V8.333zm15 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0V8.333zm-5 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0V8.333zm5 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0V8.333zM0 13.333a.833.833 0 111.666 0v1.667a.833.833 0 11-1.666 0v-1.667zm15 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0v-1.667zm-5 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0v-1.667zm5 0a.833.833 0 111.667 0v1.667a.833.833 0 11-1.667 0v-1.667z" />
+                        </svg>
+                    </label>
+                    <input type="checkbox" class="hidden" id="menu-toggle">
+                    <div class="hidden md:flex md:items-center md:justify-between">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="block py-2 px-4 text-gray-800 hover:text-indigo-500">Home</a>
+                            <a href="#about"
+                                class="block py-2 px-4 text-gray-800 hover:text-indigo-500">About</a>
+                            <a href="#features"
+                                class="block py-2 px-4 text-gray-800 hover:text-indigo-500">Features</a>
+                            <a href="#solution"
+                                class="block py-2 px-4 text-gray-800 hover:text-indigo-500">Solution</a>
+                            <a href="#contact"
+                                class="block py-2 px-4 text-gray-800 hover:text-indigo-500">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gray-900 text-white bg-cover bg-center"
+        style="background-image: url('https://source.unsplash.com/1600x900/?healthy-food');">
+        <div class="container mx-auto px-4 py-24">
+            <h1 class="text-4xl font-bold max-w-3xl">Sağlıklı Yemekler Burada</h1>
+            <h2 class="mt-4 text-2xl max-w-2xl">Sizin İçin en kaliteli sağlıklı besinleri sunuyoruz.</h2>
+            <button                class="mt-8 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg" onclick="Uyar()">Order                Now </button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-semibold mb-8">About Macro Food's</h3>
+            <p>Macro Food's is a business on a mission to provide you with the best quality and healthy food options. We                believe that the food you consume plays a significant role in your overall well-being. That's why we are                dedicated to offering nutritious and delicious meals that are carefully prepared with your health in mind.
+            </p>
+            <p class="mt-4">At Macro Food's, we understand that each customer has their own unique dietary requirements                and                preferences. We take pride in creating customized meal plans that cater to individual needs, whether you                are                looking to lose weight, gain muscle, or simply maintain a balanced diet.</p>
+            <button                class="mt-8 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg" onclick="Uyar()">Learn                More</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-semibold mb-8">Why Choose Us?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Convenience</h4>
+                    <p>With Macro Food's, you have the convenience of having delicious and healthy meals delivered                        right to your doorstep. No need to spend hours preparing meals or worry about grocery shopping. We                        make eating well simple and hassle-free.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">High-Quality Ingredients</h4>
+                    <p>We only use the freshest and highest quality ingredients in our meals. Our team of expert chefs                        carefully selects each ingredient to ensure that you receive meals that are not only nutritious but                        also packed with flavor.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Customizable Meal Plans</h4>
+                    <p>We understand that everyone's nutritional needs are different. That's why we offer customizable                        meal plans to fit your specific goals and dietary requirements. Whether you're a vegetarian,
+                        vegan, or have food allergies, we've got you covered.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Variety</h4>
+                    <p>Our menu is designed to provide you with a wide variety of healthy and delicious options. From                        wholesome salads to protein-packed main courses, we have something to satisfy every palate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-20">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-semibold mb-8">The Solution to Your Healthy Eating Goals</h3>
+            <p>At Macro Food's, our solution is simple - we take care of your healthy eating needs, so you can focus on                living your best life. Say goodbye to the stress and guesswork of meal planning and let us handle                everything for you.</p>
+            <p class="mt-4">Whether you are looking to lose weight, gain muscle, or simply maintain a balanced diet, our                team of experts is here to support you every step of the way. We believe that healthy eating should never                be                boring or restrictive. With our delicious and nutritious meals, you'll never feel deprived.</p>
+            <button                class="mt-8 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg">Get                Started</button>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-semibold mb-8">Contact Us</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block font-medium text-gray-800">Name</label>
+                            <input type="text" id="name" class="block w-full border-gray-300 rounded-lg">
+                        </div>
+                        <div>
+                            <label for="email" class="block font-medium text-gray-800">Email</label>
+                            <input type="email" id="email" class="block w-full border-gray-300 rounded-lg">
+                        </div>
+                        <div>
+                            <label for="message" class="block font-medium text-gray-800">Message</label>
+                            <textarea id="message" rows="4"
+                                class="block w-full border-gray-300 rounded-lg"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg" onclick="Uyar()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <p>Email: info@macrofoods.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 1234 Healthy Street, City, Country</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-gray-500 hover:text-indigo-500">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-500 ml-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-500 ml-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex justify-between text-sm">
+                <div>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-600">Terms of Service</a>
+                    <span class="text-gray-500 mx-2">|</span>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-600">Privacy Policy</a>
+                </div>
+                <div>
+                    <p>&copy; 2024 Macro Food's. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
